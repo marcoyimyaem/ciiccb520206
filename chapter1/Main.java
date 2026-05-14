@@ -5,13 +5,15 @@ import otherFolder.*;
 
 
 
+
 public class Main{
     public static void main(String[] args) {
         Toy toy1 = new Toy();
-        A a;
+        A a = new A();
+        A a2 = new A();
         B b;
         C c;
-        Makahiya makahiya;
+        otherFolder.a.Makahiya makahiya;
         toy1.brand="";
         toy1.name="";
         toy1.price=0;
@@ -22,6 +24,7 @@ public class Main{
         System.out.println(r.nextInt());
         // toy1.setPrice(price);
         System.out.println("Main");
+        System.out.println(a.msg);
 
 
     }
