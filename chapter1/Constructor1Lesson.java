@@ -31,3 +31,28 @@ class Chicken{
         name = "Duke";
     }
 }
+
+class Swan{
+    int numEggs;
+    public static void main(String[] args) {
+        Swan mother = new Swan();
+        mother.numEggs = 4;
+        System.out.println(mother.numEggs);
+
+    }
+}
+class Name{
+    String first = "Marc";
+    String last = "Yim";
+    String full = first+last;
+    public static void main(String[] args) {
+        Name name1 = new Name();
+        System.out.println(name1.full);
+        name1.first = "Linda";
+        name1.last = "Walker";
+        System.out.println(name1.full);
+        Name name2 = new Name();
+        name2.full = name1.first+name1.last;
+        System.out.println(name2.full);
+    }
+}
