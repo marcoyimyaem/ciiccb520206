@@ -17,6 +17,7 @@ C - class
 
 
 public class Main{
+    float gravity = Global1.EARTH_GRAVITY;
     
     public static void main(String[] args) {
         Toy toy1 = new Toy();
@@ -36,7 +37,7 @@ public class Main{
         // toy1.setPrice(price);
         System.out.println("Main");
         System.out.println(a.msg);
-
+        float n = Global1.EARTH_GRAVITY;
 
     }
     
