@@ -2,10 +2,14 @@ package chapter1;
 
 import otherFolder.Global1;
 
+
+
 public class ReferenceLesson {
     void Sample1(int p){
         int x = 100+p;
         String s = "Hello";
+        String _helloworld;
+        String Public;
     }
     public static void main(String[] args) {
         Box small = new Box();
