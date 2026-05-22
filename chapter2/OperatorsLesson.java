@@ -54,7 +54,47 @@ public class OperatorsLesson {
         long l2 = 33;
         long l3 = x2*l2; //int l3 = x2*l2;
         // System.out.println(true==1);
-
-
+        float f = 21;
+        double d =21d;
+        System.out.println(Integer.MAX_VALUE);
+        //-32768,0, 32767
+        System.out.println(Short.MAX_VALUE);
+        short wraparoundSample = (short)32768;
+        System.out.println(wraparoundSample);
+        //short - 1921222
+        //compound assignment
+        short x = 3;
+        short y =2;
+        x*=y;//x = x*y 
+        //x =(type of x) (x*y)
+        short z =(short)(x*y);
+        System.out.println(z);
+        long x3 = 5;
+        boolean p1 = false;
+        boolean p2 = p1=x3<100;
+        long y3 =(x=3);
+        System.out.println(y3);//3
+        System.out.println(x3);//3
+        System.out.println(p2);
+        boolean x4 = true | (y3<4);
+        System.out.println(x4);
+        // boolean x4 =  🔵true | 🔵(y3<4);
+        x4 = true || (y3<4);
+        // boolean x4 =  🔵true || (y3<4);
+        //  x4 =  🔵false ||🔵 (y3<4);
+        System.out.println(x4);
+        //Equality operator
+        System.out.println(100==100.000);// rule 1. 2 numeric data types
+        System.out.println(true==y3<4);// rule 2. 2 boolean data types or value
+        System.out.println("marco"=="marco");// rule 3. 2 objects, Strings or null
+        Toy toy1 = new Toy();
+        Toy toy2 = new Toy();
+        Toy toy3 = toy1;
+        Toy toy4 = null;
+        System.out.println("toy1==toy2 = "+(toy1==toy2));
+        System.out.println("toy1==toy3 = "+(toy1==toy3));
+        System.out.println("toy4==toy3 = "+(toy4==toy3));
+        System.out.println("toy4==null = "+(toy4==null));
+       
     }
 }
