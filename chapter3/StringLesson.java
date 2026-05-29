@@ -34,6 +34,25 @@ public class StringLesson {
         p=p.toUpperCase();
         System.out.println(p);
         System.out.println(p);
+        StringBuilder sb = new StringBuilder("marco");
+        String nameKo = "marco";
+        StringBuilder sb2 = new StringBuilder("ocram");
+        System.out.println(sb.toString().equals(sb2.reverse().toString()));
+        Cat cat1 = new Cat();
+        cat1.name = "williams";
+        cat1.age =1;
+        System.out.println(cat1);
+        System.out.println(nameKo==sb.toString());
+        System.out.println(nameKo.equals(sb.toString()));
         
+    }
+}
+class Cat{
+    String name;
+    int age;
+
+    @Override
+    public String toString(){
+        return "My name is "+name+" and I'm "+age+" year/s old";
     }
 }
